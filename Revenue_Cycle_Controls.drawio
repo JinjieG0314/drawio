@@ -113,63 +113,63 @@
     </mxGraphModel>
   </diagram>
   <diagram id="page-2" name="Page 2">
-    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1858" dy="1561" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="p2_0" />
         <mxCell id="p2_1" parent="p2_0" />
-        <mxCell id="p2_pool" value="Kissena Bakery — Revenue Cycle (Order-to-Cash)" style="swimlane;startSize=32;horizontal=1;childLayout=stackLayout;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" vertex="1" parent="p2_1">
-          <mxGeometry x="40" y="40" width="1020" height="470" as="geometry" />
+        <mxCell id="p2_pool" parent="p2_1" style="swimlane;startSize=32;horizontal=1;childLayout=stackLayout;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;" value="Kissena Bakery — Revenue Cycle (Order-to-Cash)" vertex="1">
+          <mxGeometry height="470" width="1530" x="40" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="p2_lane_wh" value="Warehouse Department" style="swimlane;startSize=30;horizontal=0;collapsible=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" vertex="1" parent="p2_pool">
-          <mxGeometry y="32" width="1020" height="170" as="geometry" />
+        <mxCell id="p2_lane_wh" parent="p2_pool" style="swimlane;startSize=30;horizontal=0;collapsible=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;" value="Warehouse Department" vertex="1">
+          <mxGeometry height="170" width="1530" y="32" as="geometry" />
         </mxCell>
-        <mxCell id="p2_lane_ar" value="Billing / Accounts Receivable" style="swimlane;startSize=30;horizontal=0;collapsible=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" vertex="1" parent="p2_pool">
-          <mxGeometry y="202" width="1020" height="268" as="geometry" />
+        <mxCell id="opc2" parent="p2_lane_wh" style="shape=offPageConnector;direction=east;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontStyle=1;" value="→ Continued Page 2" vertex="1">
+          <mxGeometry height="56" width="95" x="40" y="56" as="geometry" />
         </mxCell>
-        <mxCell id="opc2" value="→ Continued Page 2" style="shape=offPageConnector;direction=east;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontStyle=1;" vertex="1" parent="p2_lane_wh">
-          <mxGeometry x="40" y="56" width="95" height="56" as="geometry" />
-        </mxCell>
-        <mxCell id="edge_p2_1" edge="1" parent="p2_lane_wh" source="opc2" target="s14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="edge_p2_1" edge="1" parent="p2_lane_wh" source="opc2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s14">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s14" value="Goods Dispatched to Customer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="p2_lane_wh">
-          <mxGeometry x="130" y="56" width="170" height="56" as="geometry" />
+        <mxCell id="s14" parent="p2_lane_wh" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;" value="Goods Dispatched to Customer" vertex="1">
+          <mxGeometry height="56" width="170" x="160" y="56" as="geometry" />
         </mxCell>
-        <mxCell id="edge_p2_2" edge="1" parent="p2_pool" source="s14" target="s15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="p2_lane_ar" parent="p2_pool" style="swimlane;startSize=30;horizontal=0;collapsible=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontStyle=1;" value="Billing / Accounts Receivable" vertex="1">
+          <mxGeometry height="268" width="1530" y="202" as="geometry" />
+        </mxCell>
+        <mxCell id="s15" parent="p2_lane_ar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" value="Dispatch Confirmation Received" vertex="1">
+          <mxGeometry height="56" width="170" x="130" y="64" as="geometry" />
+        </mxCell>
+        <mxCell id="edge_p2_3" edge="1" parent="p2_lane_ar" source="s15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s16">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s15" value="Dispatch Confirmation Received" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="p2_lane_ar">
-          <mxGeometry x="130" y="64" width="170" height="56" as="geometry" />
+        <mxCell id="s16" parent="p2_lane_ar" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" value="Invoice Generated &amp; Sent to Customer" vertex="1">
+          <mxGeometry height="56" width="170" x="330" y="64" as="geometry" />
         </mxCell>
-        <mxCell id="edge_p2_3" edge="1" parent="p2_lane_ar" source="s15" target="s16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="edge_p2_4" edge="1" parent="p2_lane_ar" source="s16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s17" value="Customer Remits Payment">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s16" value="Invoice Generated &amp; Sent to Customer" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="p2_lane_ar">
-          <mxGeometry x="330" y="64" width="170" height="56" as="geometry" />
+        <mxCell id="s17" parent="p2_lane_ar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" value="Payment Received from Customer" vertex="1">
+          <mxGeometry height="56" width="170" x="650" y="64" as="geometry" />
         </mxCell>
-        <mxCell id="edge_p2_4" edge="1" parent="p2_lane_ar" source="s16" target="s17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" value="Customer Remits Payment">
+        <mxCell id="edge_p2_5" edge="1" parent="p2_lane_ar" source="s17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s18">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s17" value="Payment Received from Customer" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="p2_lane_ar">
-          <mxGeometry x="530" y="64" width="170" height="56" as="geometry" />
+        <mxCell id="s18" parent="p2_lane_ar" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" value="Remittance Advice Recorded" vertex="1">
+          <mxGeometry height="56" width="170" x="850" y="64" as="geometry" />
         </mxCell>
-        <mxCell id="edge_p2_5" edge="1" parent="p2_lane_ar" source="s17" target="s18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="edge_p2_6" edge="1" parent="p2_lane_ar" source="s18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s18" value="Remittance Advice Recorded" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="p2_lane_ar">
-          <mxGeometry x="730" y="64" width="170" height="56" as="geometry" />
+        <mxCell id="s19" parent="p2_lane_ar" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" value="Cash Posted to Accounts Receivable" vertex="1">
+          <mxGeometry height="56" width="200" x="1090" y="64" as="geometry" />
         </mxCell>
-        <mxCell id="edge_p2_6" edge="1" parent="p2_lane_ar" source="s18" target="s19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="edge_p2_7" edge="1" parent="p2_lane_ar" source="s19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s20">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="s19" value="Cash Posted to Accounts Receivable" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="p2_lane_ar">
-          <mxGeometry x="330" y="155" width="200" height="56" as="geometry" />
+        <mxCell id="s20" parent="p2_lane_ar" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" value="END" vertex="1">
+          <mxGeometry height="44" width="96" x="1350" y="70" as="geometry" />
         </mxCell>
-        <mxCell id="edge_p2_7" edge="1" parent="p2_lane_ar" source="s19" target="s20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;">
+        <mxCell id="edge_p2_2" edge="1" parent="p2_pool" source="s14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s15">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="s20" value="END" style="rounded=1;arcSize=50;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontStyle=1;" vertex="1" parent="p2_lane_ar">
-          <mxGeometry x="570" y="161" width="96" height="44" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
